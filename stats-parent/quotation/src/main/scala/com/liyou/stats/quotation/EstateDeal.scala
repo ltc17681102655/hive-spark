@@ -72,7 +72,8 @@ object EstateDeal {
 
     val tempView = "dws_stats_quotation_deal"
     spark.createDataFrame(newRdd.union(secondRdd), App.SCHEMA).createOrReplaceTempView(tempView)
-    spark.sql("insert into liyou_test_db.dws_stats_quotation partition(ds='" + ds + "') from " + tempView)
+//    spark.sql("insert into liyou_test_db.dws_stats_quotation partition(ds='" + ds + "') from " + tempView)
+    spark.sql("insert into liutongchun.dws_stats_quotation partition(ds='" + ds + "') from " + tempView)
   }
 
   def fillCityUpdateMap(spark: SparkSession) = {
