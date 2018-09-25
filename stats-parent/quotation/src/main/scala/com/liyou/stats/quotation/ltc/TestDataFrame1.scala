@@ -1,8 +1,8 @@
-package com.liyou.stats.quotation
+package com.liyou.stats.quotation.ltc
 
 import org.apache.spark.rdd.RDD
-import org.apache.spark.sql.{DataFrame, Row, SQLContext}
 import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType}
+import org.apache.spark.sql.{DataFrame, Row, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 /**
  * @Auther: ltc

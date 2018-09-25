@@ -1,4 +1,4 @@
-package com.liyou.stats.quotation
+package com.liyou.stats.quotation.ltc
 
 import org.apache.spark.{SparkConf, SparkContext}
 
