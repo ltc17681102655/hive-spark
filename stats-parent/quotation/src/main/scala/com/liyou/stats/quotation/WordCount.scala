@@ -6,6 +6,13 @@ import org.apache.spark.{SparkConf, SparkContext}
   * @Auther: ltc
   * @Date: 2018/9/20 22:28
   * @Description:
+  *
+  * 结果
+  * (scala,1)
+  * (hello,1)
+  * (java,1)
+  * (hadoop,2)
+  * (demo,1)
   */
 object WordCount {
   def main(args: Array[String]) {
@@ -23,12 +30,3 @@ object WordCount {
     sc.stop()
   }
 }
-
-/**
-  * 结果
-  * (scala,1)
-  * (hello,1)
-  * (java,1)
-  * (hadoop,2)
-  * (demo,1)
-  */
