@@ -61,7 +61,8 @@ object EstateListing {
 
     val tempView = "dws_stats_quotation_listing"
     spark.createDataFrame(cityRdd, App.SCHEMA).createOrReplaceTempView(tempView)
-    spark.sql("insert into liyou_test_db.dws_stats_quotation partition(ds='" + ds + "') from " + tempView)
+//    spark.sql("insert into liyou_test_db.dws_stats_quotation partition(ds='" + ds + "') from " + tempView)
+    spark.sql("insert into liutongchun.dws_stats_quotation partition(ds='" + ds + "') from " + tempView)
   }
 
   def statsCity(rdd: Iterable[Row], cityId: String): Array[Row] = {
